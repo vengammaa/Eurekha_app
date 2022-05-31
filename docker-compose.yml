@@ -1,0 +1,12 @@
+version: "3"
+volumes:
+ 
+  
+services:
+
+ EurekaServer-0.0.1-SNAPSHOT:
+    image: EurekaServer-0.0.1-SNAPSHOT
+    ports:
+      - "8761:8761"
+    networks:
+      - test-network

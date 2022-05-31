@@ -1,4 +1,4 @@
 FROM openjdk
-COPY target/*.jar EurekaServer-0.0.1-SNAPSHOT.jar
+COPY target/*.jar eureka_server.jar
 EXPOSE 8761
-ENTRYPOINT ["java","-jar"," build\libs\EurekaServer-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/eureka_server.jar"]
